@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarea 1 Laura Urtubia</title>
+        <h2>Listado de adopciones</h2>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p>Aqui puedes ver el listado de avisos de adopcion</p>
+        <nav>
+            <a class="btn_menu" href="index.html" >Portada</a>
+            <a class="btn_menu" href="agregar.html"  >Agregar aviso</a>
+            <a class="btn_menu" href="listado.html" >Listado</a>
+            <a class="btn_menu" href="estadisticas.html" >Estadísticas</a>
+        </nav>
+        <div id="listado">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha Publicación</th>
+                        <th>Fecha Entrega</th>
+                        <th>Comuna</th>
+                        <th>Sector</th>
+                        <th>Cantidad, tipo, edad</th>
+                        <th>Nombre Contacto</th>
+                        <th>Total fotos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="verDetalle(0)">
+                        <td>2025-09-01</td>
+                        <td>2025-09-05</td>
+                        <td>Santiago</td>
+                        <td>Ñuñoa</td>
+                        <td>1 perro, 2 años</td>
+                        <td>Camila Torres</td>
+                        <td>2</td>
+                    </tr>
+                    <tr onclick="verDetalle(1)">
+                        <td>2025-09-02</td>
+                        <td>2025-09-06</td>
+                        <td>Valparaíso</td>
+                        <td>Cerro Alegre</td>
+                        <td>2 gatos, 5 meses</td>
+                        <td>Felipe Muñoz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr onclick="verDetalle(2)">
+                        <td>2025-09-03</td>
+                        <td>2025-09-07</td>
+                        <td>Concepción</td>
+                        <td>Barrio Norte</td>
+                        <td>1 perro, 1 año</td>
+                        <td>Laura Urtubia</td>
+                        <td>1</td>
+                    </tr>
+                    <tr onclick="verDetalle(3)">
+                        <td>2025-09-04</td>
+                        <td>2025-09-09</td>
+                        <td>La Serena</td>
+                        <td>Centro</td>
+                        <td>3 gatos, 6 meses</td>
+                        <td>Daniela Vega</td>
+                        <td>4</td>
+                    </tr>
+                    <tr onclick="verDetalle(4)">
+                        <td>2025-09-05</td>
+                        <td>2025-09-12</td>
+                        <td>Puerto Montt</td>
+                        <td>Alerce</td>
+                        <td>1 perro, 3 años</td>
+                        <td>Andrés López</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Detalle -->
+        <div id="detalleAviso"></div>
+
+        <!-- Foto grande -->
+        <div id="fotoGrande">
+            <img id="imgGrande" src="">
+            <button onclick="cerrarFoto()">Cerrar</button>
+        </div>
+        <script src="Datos.js"></script>
+    </body>
+</html>
